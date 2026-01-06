@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Servidor DEV - Discord</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+        background:#000;
+        color:#fff;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    /* Fundo animado */
+    .background{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle,#111,#000);
+        z-index: -1;
+    }
+
+    .circle{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 2px solid white;
+        opacity: 0.1;
+        animation: pulseCircle 6s infinite linear;
+    }
+
+    @keyframes pulseCircle {
+        0%{transform: scale(1);}
+        50%{transform: scale(1.2);}
+        100%{transform: scale(1);}
+    }
+
+    /* LOGO */
+    .logo-area{
+        margin-top: 40px;
+    }
+
+    .logo-box{
+        display: inline-block;
+        padding: 20px 30px;
+        border: 3px solid white;
+        border-radius: 15px;
+        box-shadow: 0 0 25px white;
+        font-family:'Press Start 2P';
+    }
+
+    .logo-icons{
+        font-size: 60px;
+    }
+
+    .logo-text{
+        margin-top: 10px;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    /* CARD PRINCIPAL */
+    .box{
+        background: #fff;
+        color: #000;
+        padding: 40px;
+        border-radius: 15px;
+        width: 380px;
+        border: 3px solid #fff;
+        box-shadow: 0 0 20px white;
+        animation: pulse 4s infinite ease-in-out;
+        margin: 40px auto;
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 15px white; }
+        50% { box-shadow: 0 0 35px white; }
+        100% { box-shadow: 0 0 15px white; }
+    }
+
+    .title{
+        font-family: 'Press Start 2P';
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .btn{
+        padding: 15px 10px;
+        background: #000;
+        color: white;
+        border: none;
+        font-size: 15px;
+        width: 100%;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-family: 'Press Start 2P';
+    }
+
+    .btn:hover{
+        background: white;
+        color: black;
+        border: 2px solid black;
+        transform: scale(1.05);
+    }
+
+    .section{
+        margin-top: 40px;
+        font-size: 18px;
+        width: 80%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 30px;
+    }
+
+    .credit{
+        margin-top: 35px;
+        font-size: 12px;
+        opacity: 0.8;
+        font-family: 'Press Start 2P';
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="background">
+    <div class="circle" style="top:20%; left:10%;"></div>
+    <div class="circle" style="bottom:10%; right:15%; animation-delay:1s;"></div>
+</div>
+
+<!-- LOGO -->
+<div class="logo-area">
+    <div class="logo-box">
+        <div class="logo-icons">🤖💻</div>
+        <div class="logo-text">DEVS COMMUNITY</div>
+    </div>
+</div>
+
+<!-- CARD PRINCIPAL -->
+<div class="box">
+    <div class="title">DEVS</div>
+
+    <button class="btn" onclick="window.location.href='https://discord.gg/kQ4NArcr'">
+        ENTRE NO SERVIDOR AQUI
+    </button>
+
+    <p style="margin-top:18px;">
+        Comunidade para devs e iniciantes 💬✨<br>
+        Aprenda • Crie • Evolua • Compartilhe Projetos 🚀
+    </p>
+
+    <div class="credit">
+        CRIADO POR LUIZETO
+    </div>
+</div>
+
+<!-- DESCRIÇÃO -->
+<div class="section">
+    🌐 Ambiente amigável e colaborativo <br><br>
+    🧠 Ajuda com projetos e dúvidas <br><br>
+    🚀 Projetos em equipe para evoluir de verdade <br><br>
+    🤝 Lugar perfeito pra quem ama programação
+</div>
+
+</body>
+</html>
